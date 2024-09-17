@@ -1,0 +1,36 @@
+
+
+
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    text-align: center;
+    background-color: #4CA1AF;
+    
+    
+}
+.right-section{
+    order: 1;
+
+}
+.right-section > *{
+    text-decoration: none;
+    padding: 4px;
+    margin-right: 5px;
+    color: white;
+}
+.left-section > *{
+    color: white;
+    text-decoration: none;
+}
+.right-section > a:hover {
+    color: red;
+    border-bottom: solid 3px red;
+}
+#sign-up:hover{
+    padding: 4px 4px;
+    border: solid 2px;
+    
+}
