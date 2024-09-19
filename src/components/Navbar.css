@@ -4,10 +4,11 @@
 .navbar-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 15px;
     text-align: center;
     background-color: #4CA1AF;
+    width: 100vw;
     
     
 }

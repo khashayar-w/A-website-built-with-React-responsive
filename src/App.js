@@ -1,10 +1,10 @@
 import './App.css';
 import { BrowserRouter as Br, Route, Routes } from "react-router-dom";
 import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Service from './components/service';
-import Products from './components/products';
-import SignUp from './components/sign-up';
+import Home from './components/pages/Home';
+import Service from './components/pages/service';
+import Products from './components/pages/products';
+import SignUp from './components/pages/sign-up';
 
 function App() {
   return (
