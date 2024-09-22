@@ -7,12 +7,12 @@ import { Link } from "react-router-dom";
 const Cards = () => {
   return (
     <>
-      <h5
+      <marquee
         className="text-center"
         style={{ fontWeight: "bold", background: "black", color: "white" }}
       >
         Make a bunch of these memories for yourself
-      </h5>
+      </marquee>
       <div id="cards" className="row">
         <div className="col-lg-4 col-sm-12 ">
           <img src={img9} alt="" />

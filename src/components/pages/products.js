@@ -1,8 +1,8 @@
 function Products() {
     return ( 
         <>
-            <div className="products">
-                
+            <div className="product-content">
+                <h1>Products</h1>
             </div>
         </>
     );

@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function HeroSection() {
   return (
@@ -11,10 +12,10 @@ function HeroSection() {
             <h5>what are you waiting for?</h5>
           </div>
           <div className="buttons">
-            <a href="#">GET STARTED</a>
-            <a href="#" id="watchBTN">
-              WATCH TRAILER <FontAwesomeIcon icon={faPlay} />
-            </a>
+            <Link to="/signup">GET STARTED</Link>
+            <Link to="/trailer" id="watchBTN">
+              WATCH TRAILER <FontAwesomeIcon style={{fontSize:"1em", paddingLeft:'10px'}} icon={faCirclePlay} />
+            </Link>
           </div>
         </div>
       </div>

@@ -4,13 +4,32 @@
 .navbar-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 15px;
     text-align: center;
-    background-color: #4CA1AF;
+
+    background: #1f4037;
+    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     width: 100vw;
     
     
+}
+.hidden-items{
+    order:2;
+    display: none;
+}
+.hidden-list >a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+}
+.hidden-list> a:hover{
+    color: black;
+   
+
 }
 .right-section{
     order: 1;
@@ -27,11 +46,43 @@
     text-decoration: none;
 }
 .right-section > a:hover {
-    color: red;
+    color: black;
     border-bottom: solid 3px red;
+    transition: .5s ease-in-out;
 }
 #sign-up:hover{
     padding: 4px 4px;
     border: solid 2px;
     
 }
+
+@media (max-width:600px) {
+    .navbar-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .right-section{
+        display: none;
+    }
+    .hidden-items{
+        display: block;
+    }
+    .Menu-Btn{
+        background-color: inherit;
+        border: none;
+    }
+
+        
+    .hidden-list{
+        display: flex;
+        background-color: inherit;
+        height: cover;
+        
+        flex-direction: column;
+    
+      
+    }
+}
+
+
+
